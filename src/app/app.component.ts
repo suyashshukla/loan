@@ -1,12 +1,23 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { LOAN, LOAN_REPAYMENTS } from './loan-data.model';
+import { Loan, LoanRepayment } from './loan.model';
+import { NgFor, NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'],
+  imports: [NgFor, NgClass],
+  standalone: true
 })
 export class AppComponent {
   title = 'loan';
+
+  loan: Loan = LOAN;
+  repayments: LoanRepayment[] = LOAN_REPAYMENTS;
+
+  getMonthYear(month: number, year: number): string {
+    const date = new Date(year, month - 1);
+    return date.toLocaleString('en-US', { month: 'long', year: 'numeric' });
+  }
 }
