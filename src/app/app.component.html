@@ -56,9 +56,10 @@
     <div class="repayment-card" *ngFor="let repayment of repayments; let i = index">
       <div class="repayment-top">
         <span class="emi">EMI #{{ i + 1 }}</span>
-        <span class="status" [ngClass]="repayment.isPending ? 'pending' : 'paid'">
+        <span class="status" *ngIf="repayment.amount!==0" [ngClass]="repayment.isPending ? 'pending' : 'paid'">
           {{ repayment.isPending ? 'Pending' : 'Paid' }}
         </span>
+        <span class="status skipped" *ngIf="repayment.amount===0">Skipped</span>
       </div>
 
       <div class="repayment-grid">

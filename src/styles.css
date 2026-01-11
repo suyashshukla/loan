@@ -71,6 +71,10 @@
     color: #f59e0b;
 }
 
+.skipped {
+    color: #6b7280;
+}
+
 /* Repayment section */
 .section-title {
     margin-bottom: 10px;
@@ -114,6 +118,11 @@
 .status.pending {
     background: #fee2e2;
     color: #991b1b;
+}
+
+.status.skipped {
+    background: #e5e7eb;
+    color: #374151;
 }
 
 .repayment-grid {

@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { LOAN, LOAN_REPAYMENTS } from './loan-data.model';
 import { Loan, LoanRepayment } from './loan.model';
-import { NgFor, NgClass } from '@angular/common';
+import { NgFor, NgClass, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  imports: [NgFor, NgClass],
+  imports: [NgFor, NgClass, NgIf],
   standalone: true
 })
 export class AppComponent {
