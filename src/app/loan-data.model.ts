@@ -5,8 +5,6 @@ export const LOAN: Loan = {
     processingFees: 2280,
     interestRate: 19.49,
     totalAmountToBePaid: 79621.97,
-    totalAmountPaid: 26678,
-    totalAmountLeft: 52943.97
 };
 
 export const LOAN_REPAYMENTS: LoanRepayment[] = [
@@ -17,8 +15,8 @@ export const LOAN_REPAYMENTS: LoanRepayment[] = [
     { month: 11, year: 2025, amount: 5000, amountLeft: 62943.97 },
     { month: 12, year: 2025, amount: 5000, amountLeft: 57943.97 },
     { month: 1, year: 2026, amount: 5000, amountLeft: 52943.97 },
-    { month: 2, year: 2026, amount: 5000, isPending: true, amountLeft: 47943.97 },
-    { month: 3, year: 2026, amount: 5000, isPending: true, amountLeft: 42943.97 },
+    { month: 2, year: 2026, amount: 5000, amountLeft: 47943.97 },
+    { month: 3, year: 2026, amount: 5000, amountLeft: 42943.97 },
     { month: 4, year: 2026, amount: 5000, isPending: true, amountLeft: 37943.97 },
     { month: 5, year: 2026, amount: 5000, isPending: true, amountLeft: 32943.97 },
     { month: 6, year: 2026, amount: 5000, isPending: true, amountLeft: 27943.97 },
