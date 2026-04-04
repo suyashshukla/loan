@@ -17,7 +17,7 @@ export const LOAN_REPAYMENTS: LoanRepayment[] = [
     { month: 1, year: 2026, amount: 5000, amountLeft: 52943.97 },
     { month: 2, year: 2026, amount: 5000, amountLeft: 47943.97 },
     { month: 3, year: 2026, amount: 5000, amountLeft: 42943.97 },
-    { month: 4, year: 2026, amount: 5000, isPending: true, amountLeft: 37943.97 },
+    { month: 4, year: 2026, amount: 5000, amountLeft: 37943.97 },
     { month: 5, year: 2026, amount: 5000, isPending: true, amountLeft: 32943.97 },
     { month: 6, year: 2026, amount: 5000, isPending: true, amountLeft: 27943.97 },
     { month: 7, year: 2026, amount: 5000, isPending: true, amountLeft: 22943.97 },
